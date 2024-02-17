@@ -1,5 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -7,7 +9,6 @@ body {
 
 header {
     text-align: center;
-    background-color: #222282;
     color: #fff;
     padding: 20px;
     
@@ -44,11 +45,13 @@ p {
     margin: 0;
 }
 
-.content-container{
+.gallery{
     max-width: 800px;
     margin: 20px;
     padding: 0 20px;
 }
+
+
 
 .hero{
     height: 650px;
@@ -57,8 +60,6 @@ p {
     background-size: cover;
     background-position:center;
     background-color: #000015; 
-
-    
 }
 .hero-description{
     height: 650px;
@@ -90,13 +91,14 @@ p {
 
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container{
+    padding: 5rem 2rem;
+    height: 650px;
+    background-image: url("img/robocuprobo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #000015; 
 }
 
 .gallery {
@@ -126,4 +128,85 @@ p {
     font-weight: bold;
     text-align: center;
     margin-bottom: 5px;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
 }
