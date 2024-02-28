@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Team</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
         body {
             font-family: Poppins, sans-serif;
             margin: 0;
@@ -14,33 +16,34 @@
         }
 
         .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
             padding: 20px;
             background-color: #fff;
             border-radius: 0;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 5rem 2rem;
         }
 
         .team-member {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            margin-bottom: 20px;
+            text-align: center;
         }
 
         .headshot {
             width: 150px;
             height: 200px;
-            border-radius: 0%;
-            margin-right: 20px;
+            margin-bottom: 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            border: black;
         }
 
         .headshot:hover {
             transform: scale(1.05);
-        }
-
-        .info {
-            flex: 1;
         }
 
         .name {
@@ -51,108 +54,168 @@
         .description {
             font-size: 14px;
         }
+
+        nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 75px;
+        }
+
+
+        nav .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100%;
+            max-width: 100%;
+            background: rgba(10, 47, 232, 0.5);
+
+            margin: auto;
+        }
+
+        nav .navbar .logo a {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        nav .navbar .menu {
+            display: flex;
+        }
+
+        .navbar .menu li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        .navbar .menu li a {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        section {
+            padding: auto;
+        }
     </style>
 </head>
+
 <body>
-
-<div class="container">
-    <h1>Meet the team</h1>
-    <div class="team-member">
-        <img src="img/headshots/Daniel.jpg" alt="Daniel Markusson" class="headshot">
-        <div class="info">
-            <h2 class="name">Daniel Markusson</h2>
-            <p class="description">Head Programmer</p>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">CPC Robotics</a></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sponsors.html">Sponsor</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="gallery.html">Team</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="team-member">
+                <img src="img/headshots/Daniel.jpg" alt="Daniel Markusson" class="headshot">
+                <div class="info">
+                    <h2 class="name">Daniel Markusson</h2>
+                    <p class="description">Head Programmer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Hayden.jpg" alt="Hayden Patience" class="headshot">
-        <div class="info">
-            <h2 class="name">Hayden Patience</h2>
-            <p class="description">Head Hardware Engineer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Hayden.jpg" alt="Hayden Patience" class="headshot">
+                <div class="info">
+                    <h2 class="name">Hayden Patience</h2>
+                    <p class="description">Head Hardware Engineer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Luke.jpg" alt="Luke Harford" class="headshot">
-        <div class="info">
-            <h2 class="name">Luke Harford</h2>
-            <p class="description">Head of Media</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Luke.jpg" alt="Luke Harford" class="headshot">
+                <div class="info">
+                    <h2 class="name">Luke Harford</h2>
+                    <p class="description">Head of Media</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Kyle.jpg" alt="Kyle Andersen" class="headshot">
-        <div class="info">
-            <h2 class="name">Kyle Andersen</h2>
-            <p class="description">Programmer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Kyle.jpg" alt="Kyle Andersen" class="headshot">
+                <div class="info">
+                    <h2 class="name">Kyle Andersen</h2>
+                    <p class="description">Programmer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Jacky.jpg" alt="Jacky Zhang" class="headshot">
-        <div class="info">
-            <h2 class="name">Jacky Zhang</h2>
-            <p class="description">Programmer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Jacky.jpg" alt="Jacky Zhang" class="headshot">
+                <div class="info">
+                    <h2 class="name">Jacky Zhang</h2>
+                    <p class="description">Programmer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Tristan.jpg" alt="Tristan" class="headshot">
-        <div class="info">
-            <h2 class="name">Tristan</h2>
-            <p class="description">Hardware Engineer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Tristan.jpg" alt="Tristan" class="headshot">
+                <div class="info">
+                    <h2 class="name">Tristan</h2>
+                    <p class="description">Hardware Engineer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Jayson.jpg" alt="Jayson Sone" class="headshot">
-        <div class="info">
-            <h2 class="name">Jayson Sone</h2>
-            <p class="description">Hardware Engineer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Jayson.jpg" alt="Jayson Sone" class="headshot">
+                <div class="info">
+                    <h2 class="name">Jayson Sone</h2>
+                    <p class="description">Hardware Engineer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Kai.jpg" alt="Kai" class="headshot">
-        <div class="info">
-            <h2 class="name">Kai</h2>
-            <p class="description">Member of Media</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Kai.jpg" alt="Kai" class="headshot">
+                <div class="info">
+                    <h2 class="name">Kai Czylyski</h2>
+                    <p class="description">Member of Media</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Liam.jpg" alt="Liam Stern" class="headshot">
-        <div class="info">
-            <h2 class="name">Liam Stern</h2>
-            <p class="description">Head Photographer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Liam.jpg" alt="Liam Stern" class="headshot">
+                <div class="info">
+                    <h2 class="name">Liam Stern</h2>
+                    <p class="description">Head Photographer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Noah.jpg" alt="Noah Kassam" class="headshot">
-        <div class="info">
-            <h2 class="name">Noah Kassam</h2>
-            <p class="description">Graphic Designer</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Noah.jpg" alt="Noah Kassam" class="headshot">
+                <div class="info">
+                    <h2 class="name">Noah Kassam</h2>
+                    <p class="description">Graphic Designer</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Reichen.jpg" alt="Reichen Thorp" class="headshot">
-        <div class="info">
-            <h2 class="name">Reichen Thorp</h2>
-            <p class="description">Media Representative</p>
-        </div>
-    </div>
+            <div class="team-member">
+                <img src="img/headshots/Reichen.jpg" alt="Reichen Thorp" class="headshot">
+                <div class="info">
+                    <h2 class="name">Reichen Thorpe</h2>
+                    <p class="description">Media Representative</p>
+                </div>
+            </div>
 
-    <div class="team-member">
-        <img src="img/headshots/Ryder.jpg" alt="Ryder Jackson" class="headshot">
-        <div class="info">
-            <h2 class="name">Ryder Jackson</h2>
-            <p class="description">Photographer</p>
+            <div class="team-member">
+                <img src="img/headshots/Ryder.jpg" alt="Ryder Jackson" class="headshot">
+                <div class="info">
+                    <h2 class="name">Ryder Jackson</h2>
+                    <p class="description">Photographer</p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
 </body>
+
 </html>
